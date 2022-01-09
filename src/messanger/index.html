@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
+    <title>MySite</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+<div id="headers">
+    <div id="header" class="containers">
+        <div id="logo">
+            <h1><span class="fa fa-bolt"></span><a href="../main">My Projects</a></h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="../main" accesskey="1" title="">Главная</a></li>
+                <li><a href="../reviews" accesskey="2" title="">отзывы</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="choose_chat">
+    <div class="name Egor">
+        <img src="../img/egor.png" alt="Egor">
+        <p>Егор</p>
+    </div>
+    <div class="name Alexey">
+        <img src="../img/leshia.png" alt="Lesha">
+        <p>Алексей</p>
+    </div>
+    <div class="name Elisey">
+        <img src="../img/elisey.jpg" alt="Elisey">
+        <p>Елисей</p>
+    </div>
+    <div class="name Nastya">
+        <img src="../img/nastya.jpg" alt="Nasty">
+        <p>Анастасия</p>
+    </div>
+    <div class="name Sasha">
+        <img src="../img/alex.jpg" alt="Sasha">
+        <p>Александр</p>
+    </div>
+</div>
+<div class="chat"></div>
+<div class="msend">
+</div>
+<div>
+    <div class="buttons_mess">
+        <input type="text" class="form-control" id="usr">
+        <button type="submit" class="send" onclick="sendMessage()">Отправить</button>
+        <button type="submit" class="clear" onclick="clearAll()">Очистить</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

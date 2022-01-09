@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
+    <title>MySite</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+<div id="headers">
+    <div id="header" class="containers">
+        <div id="logo">
+            <h1><span class="fa fa-bolt"></span><a href="../main">My Projects</a></h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="../main" accesskey="1" title="">Главная</a></li>
+                <li class="current_page_item"><a href="../reviews" accesskey="2" title="">Отзывы</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main-title">
+<h2><span class="fa fa-arrow-down"> Оставить отзыв</h2>
+    <span class="byline"></span>
+</div>
+<div class="comments">
+    <div class="form-group">
+        <label for="usr">Имя:</label>
+        <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+        <label for="comment">Комментарий:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    <button id="but" type="button" onclick="send()" class="btn btn-success">Отправить</button>
+</div>
+<div class="main-title">
+    <h2><span class="fa fa-arrow-down"></span> Отзывы пользователей</h2>
+    <span class="byline"></span>
+</div>
+<div class="done">
+    <div class="avatars">
+        <img src="../img/egor.png" alt="Avatar" style="width:90px">
+        <p><span><a href="https://vk.com/egorhmell">Egor Pocevich</a></span></p>
+        <p>Дочка уплетает за обе щеки! Очень приятный на вкус! Цена из расчёта на 5 дней нормальная, дешевле готовых супов хипп и семпер.</p>
+    </div>
+    <div class="avatars">
+        <img src="../img/leshia.png" alt="Avatar" style="width:90px">
+        <p><span ><a href="https://vk.com/pavlov.aleksei">Alexey Lion 1-16</a></span></p>
+        <p>Когда в рацион малыша мы ввели мясо и овощи по отдельности, решили что пора начинать расширять меню ребенка и предлагать уже настоящие полноценные блюда. Наш выбор пал на крем-супы компании Hipp. Мой сын особенно полюбил кушать овощной крем-суп с говядиной. И это не удивительно, ведь он действительно очень вкусный, с приятным ароматом и с богатым вкусом овощей и говядины. У супа однородная текстура без комочков, но по консистенции суп немного густоват. Нашего ребенка это не смутило, ему все нравится, поэтому мы никак его не разбавляем. Объем блюда для нас в самый раз, нам хватает на два приема пищи. Подогреваем немного в микроволновой печи и ребенок с удовольствием кушает.А для меня очень важно, что у этого супа хороший и безопасный состав для ребенка, поскольку он не содержит красителей, консервантов, усилителей вкуса, а также соли, крахмала и прочих ненужных добавок. К тому же этот суп ещё благоприятно влияет на развитие мозга ребенка, так как обогащен Омега-3. Конечно, суп можно приготовить и самим дома, но я предпочитаю, чтобы пара баночек готовой еды всегда была у нас в запасе: взять с собой на дачу или когда идём в гости. А так же бывают дни, когда хочется как можно больше времени провести с ребенком, не отвлекаясь на готовку. Малыш ест крем-суп с большим удовольствием и хорошим аппетитом, с пищеварением всегда все в норме, поэтому малыш сытый и счастливый, а мы - родители, очень этому рады!</p>
+    </div>
+    <div class="avatars">
+        <img src="../img/alex.jpg" alt="Avatar" style="width:90px">
+        <p><span ><a href="https://vk.com/bedpled">Alexander Flex</a></span></p>
+        <p>Запах хороший, на вкус тоже, но ооочень густое. Мой ребёнок всегда отказывается от густого, съел пару ложек и все.</p>
+    </div>
+    <div class="avatars">
+        <img src="../img/nastya.jpg" alt="Avatar" style="width:90px">
+        <p><span ><a href="https://vk.com/liss_see">Anastasia Ctr+C Ctr+V</a></span></p>
+        <p>Купили дочке попробывать за раз аж 3 пачки съела нам 2года</p>
+    </div>
+    <div class="avatars">
+        <img src="../img/elisey.jpg" alt="Avatar" style="width:90px">
+        <p><span ><a href="https://vk.com/boh_v_pomosch">Elisey Na Parah Odin Raz</a></span></p>
+        <p>Ребенку очень понравилось, ароматное и сытное. Да что говорить, мне самой понравилось, и бабушка как ее на безсолевую диету врач посадила теперь себе это рагу регулярно берет</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

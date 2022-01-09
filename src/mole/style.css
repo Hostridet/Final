@@ -1,0 +1,173 @@
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #2b2b2b;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #6c6c6c
+}
+#headers
+{
+    background: #2b2b2b;
+}
+#header
+{
+    position: relative;
+    height: 100px;
+    width: 90%;
+}
+.containers
+{
+    margin: 0px auto;
+    width: 1200px;
+}
+#logo
+{
+    position: absolute;
+    top: 2em;
+    width: 100%;
+}
+#logo h1
+{
+    display: inline-block;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ED7070;
+    padding-right: 0.50em;
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+#logo span
+{
+    display: inline-block;
+    padding-right: .50em;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    font-size: 0.90em;
+}
+#logo a
+{
+    text-decoration: none;
+    color: #FFF;
+}
+#logo .fa
+{
+    color: #8dc63f;
+}
+#logo .fa:after
+{
+    position: absolute;
+    display: inline-block;
+    padding-right: 2em;
+}
+#menu
+{
+    position: absolute;
+    right: 0;
+    top: 1.6em;
+}
+#menu ul
+{
+    display: inline-block;
+}
+#menu li
+{
+    display: block;
+    float: left;
+    text-align: center;
+}
+#menu li a, #menu li span
+{
+    display: inline-block;
+    margin-left: 1px;
+    padding: 1em 1.5em 0em 1.5em;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    outline: 0;
+    color: #FFF;
+}
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+}
+#menu .current_page_item a
+{
+    color: #8dc63f;
+}
+.button_suicide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.button_play{
+    border-radius: 25px;
+    box-shadow: 0 0 10px #A9A9A9;
+    height:50px;
+    color: #C0C0C0;
+    width:180px;
+    background: linear-gradient(90deg,#808080,#696969);
+    font-size: medium;
+    font-weight: normal;
+}
+.button_play:hover {
+    background: linear-gradient(90deg,#DCDCDC,#A9A9A9);
+    color: #000;
+}
+.game {
+    justify-content: center;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(4, 120px);
+}
+.game > div {
+    box-shadow: 0 0 10px slategrey;
+    position: relative;
+    background-color: slategrey;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #fff
+}
+.points{
+    margin-top: 35px;
+    text-align: center;
+    color: #454547;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+.points .name
+{
+    top: 15%;
+    left: 32%;
+}
+.points .count
+{
+    top: 15%;
+    left: 44%;
+}
+.mole {
+    position: absolute;
+    height: 100px;
+    z-index: 1;
+    animation: appear 0.3s linear;
+}
+
+@keyframes appear {
+    from {
+        top: 90px;
+    }
+    to {
+        top: 24px;
+    }
+}
